@@ -1,0 +1,13 @@
+ProjetToUtilisateur:
+  relation1:
+    projet_id: 1
+    utilisateur_id: 1
+  relation2:
+    projet_id: 1
+    utilisateur_id: 2
+  relation3:
+    projet_id: 1
+    utilisateur_id: 3
+  relation4:
+    projet_id: 1
+    utilisateur_id: 4

@@ -1,0 +1,13 @@
+UtilisateurToGroupe:
+  relation1:
+    utilisateur_id: 1
+    groupe_id: 1
+  relation2:
+    utilisateur_id: 2
+    groupe_id: 1
+  relation3:
+    utilisateur_id: 3
+    groupe_id: 1
+  relation4:
+    utilisateur_id: 4
+    groupe_id: 1

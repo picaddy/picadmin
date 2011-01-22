@@ -1,0 +1,13 @@
+TacheToUtilisateur:
+  relation1:
+    tache_id: 1
+    utilisateur_id: 2
+  relation2:
+    tache_id: 2
+    utilisateur_id: 1
+  relation2:
+    tache_id: 3
+    utilisateur_id: 3
+  relation3:
+    tache_id: 4
+    utilisateur_id: 4

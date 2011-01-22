@@ -1,0 +1,143 @@
+ProjetType:
+  actAs: { Timestampable: ~ }
+  columns:
+    projet_type_nom: { type: string(255), notnull: true, unique: true }
+    projet_type_code: { type: string(1), notnull: true }
+    projet_type_couleur: { type: string(6), notnull: true }
+
+Projet:
+  actAs: { Timestampable: ~ }
+  columns:
+    projet_nom: { type: string(255), notnull: true, unique: true }
+    projet_description: { type: string(1500), notnull:false }
+    projet_date_debut: { type: timestamp, notnull: true }
+    projet_date_fin: { type: timestamp, notnull: true }
+    projet_type_id: { type: integer, notnull: true }
+    projet_statut_id: { type: integer, notnull: true }
+  relations:
+    ProjetType: { onDelete: CASCADE, local: projet_type_id, foreign: id, foreignAlias: Projets }
+    Statut: { onDelete: CASCADE, local: projet_statut_id, foreign: id, foreignAlias: ProjetToStatut}
+
+Tache:
+  actAs: { Timestampable: ~ }
+  columns:
+    tache_nom: { type: string(255), notnull: true, unique: true }
+    tache_description: { type: string(1500), notnull: false }
+    tache_date_debut: { type: timestamp, notnull: true }
+    tache_date_fin: { type: timestamp, notnull: true }
+    tache_parent_id: { type: integer, notnull: true }
+    tache_ordre: { type: integer, notnull: true }
+    tache_pourcentage: { type: integer, notnull: true }
+    tache_projet_id: { type: integer, notnull: true }
+    tache_statut_id: { type: integer, notnull: true }
+  relations:
+    Projet: { onDelete: CASCADE, local: tache_projet_id, foreign: id, foreignAlias: TachesToProjets}
+    Statut: { onDelete: CASCADE, local: tache_statut_id, foreign: id, foreignAlias: TachesToStatuts}
+
+Statut:
+  actAs: { Timestampable: ~ }
+  columns:
+    statut_nom: { type: string(255), notnull: true }
+    statut_code: { type: string(1), notnull: true }
+    statut_couleur: { type: string(6), notnull: true }
+    statut_bug: { type: integer, notnull: true }
+    statut_idee: { type: integer, notnull: true }
+    statut_tache: { type: integer, notnull: true }
+    statut_projet: { type: integer, notnull: true }
+
+Utilisateur:
+  actAs: { Timestampable: ~ }
+  columns:
+    utilisateur_nom: { type: string(255), notnull: true }
+    utilisateur_prenom: { type: string(255), notnull: true }
+    utilisateur_email: { type: string(255), notnull: true, unique: true }
+    utilisateur_pseudo: { type: string(255), notnull: true }
+    utilisateur_motdepasse: { type: string(255), notnull: true }
+    utilisateur_photo: { type: string(255), notnull: false }
+
+Groupe:
+  actAs: { Timestampable: ~ }
+  columns:
+    groupe_nom: { type: string(255), notnull: true, unique: true }
+
+UtilisateurToGroupe:
+  columns:
+    utilisateur_id: { type: integer, primary: true }
+    groupe_id: { type: integer, primary: true }
+  relations:
+    Utilisateur: { onDelete: CASCADE, local: utilisateur_id, foreign: id }
+    Groupe: { onDelete: CASCADE, local: groupe_id, foreign: id }
+
+TacheToUtilisateur:
+  columns:
+    tache_id: { type: integer, primary: true }
+    utilisateur_id: { type: integer, primary: true }
+  relations:
+    Tache: { onDelete: CASCADE, local: tache_id, foreign: id }
+    Utilisateur: { onDelete: CASCADE, local: utilisateur_id, foreign: id }
+
+ProjetToUtilisateur:
+  columns:
+    projet_id: { type: integer, primary: true }
+    utilisateur_id: { type: integer, primary: true }
+  relations:
+    Projet: { onDelete: CASCADE, local: projet_id, foreign: id }
+    Utilisateur: { onDelete: CASCADE, local: utilisateur_id, foreign: id }
+
+Commentaire:
+  actAs: { Timestampable: ~ }
+  columns:
+    commentaire_description: { type: string(1500), notnull: true }
+    commentaire_idee_id: { type: integer, notnull: true }
+    commentaire_tache_id: { type: integer, notnull: true }
+    commentaire_utilisateur_id: { type: integer, notnull: true }
+  relations:
+    Utilisateur: { onDelete: CASCADE, local: commentaire_utilisateur_id, foreign: id, foreignAlias: UtilisateurToCommentaire }
+    Tache: { onDelete: CASCADE, local: commentaire_tache_id, foreign: id, foreignAlias: CommentaireToTache }
+    Idee: { onDelete: CASCADE, local: commentaire_idee_id, foreign: id, foreignAlias: CommentaireToIdee }
+
+Idee:
+  actAs: { Timestampable: ~ }
+  columns:
+    idee_nom: { type: string(255), notnull: true }
+    idee_description: { type: string(1500), notnull: true }
+    idee_utilisateur_id: { type: integer, notnull: true }
+    idee_projet_type_id: { type: integer, notnull: true }
+    idee_statut_id: { type: integer, notnull: true }
+  relations:
+    Utilisateur: { onDelete: CASCADE, local: idee_utilisateur_id, foreign: id, foreignAlias: UtilisateurToIdee }
+    ProjetType: { onDelete: CASCADE, local: idee_projet_type_id, foreign: id, foreignAlias: ProjetTypeToIdee }
+    Statut: { onDelete: CASCADE, local: idee_statut_id, foreign: id, foreignAlias: StatutToIdee }
+
+Bug:
+  actAs: { Timestampable: ~ }
+  columns:
+    bug_url: { type: string(255), notnull: true }
+    bug_description: { type: string(1500), notnull: true }
+    bug_auteur_id: { type: integer, notnull: true }
+    bug_referent_id: { type: integer, notnull: true }
+    bug_statut_id: { type: integer, notnull: true }
+  relations:
+    Utilisateur: { onDelete: CASCADE, local: bug_auteur_id, foreign: id, foreignAlias: UtilisateurToBug }
+    Utilisateur: { onDelete: CASCADE, local: bug_referent_id, foreign: id, foreignAlias: UtilisateurToBugBis }
+    Statut: { onDelete: CASCADE, local: bug_statut_id, foreign: id, foreignAlias: StatutToBug }
+
+Note:
+  actAs: { Timestampable: ~ }
+  columns:
+    note_nom: { type: string(255), notnull: true }
+    note_description: { type: string(1500), notnull: true }
+    note_utilisateur_id: { type: integer, notnull: true }
+  relations:
+    Utilisateur: { onDelete: CASCADE, local: note_utilisateur_id, foreign: id, foreignAlias: UtilisateurToNote }
+
+Document:
+  columns:
+    document_nom: { type: string(255), notnull: true }
+    document_note_id: { type: integer, notnull: true }
+    document_idee_id: { type: integer, notnull: true }
+    document_bug_id: { type: integer, notnull: true }
+  relations:
+    Note: { onDelete: CASCADE, local: document_note_id, foreign: id, foreignAlias: NoteToDocument }
+    Idee: { onDelete: CASCADE, local: document_idee_id, foreign: id, foreignAlias: IdeeToDocument }
+    Bug: { onDelete: CASCADE, local: document_bug_id, foreign: id, foreignAlias: BugToDocument }

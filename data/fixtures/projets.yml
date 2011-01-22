@@ -1,0 +1,15 @@
+Projet:
+  admin.picaddy.com:
+    projet_nom: admin.picaddy.com
+    projet_description: |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+    projet_date_debut: '2011-01-20'
+    projet_date_fin: '2011-02-28'
+    projet_type_id: 1
+    projet_statut_id: 6
+    created_at: '2011-01-20'
+    updated_at: '2011-01-20'

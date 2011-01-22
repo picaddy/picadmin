@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [datePicker.css, pro_dopline.css, pro_dropline_ie.css, screen.css]
+
+  javascripts:    [jquery/jquery-1.4.1.min.js, jquery/ui.core.js, jquery/ui.checkbox.js, jquery/jquery.bind.js, jquery/jquery.selectbox-0.5.js, jquery/jquery.selectbox-0.5_style_2.js, jquery/jquery.filestyle.js, jquery/custom_jquery.js, jquery/jquery.tooltip.js, jquery/jquery.dimensions.js, jquery/date.js, jquery/jquery.datePicker.js]
+
+  has_layout:     true
+  layout:         layout

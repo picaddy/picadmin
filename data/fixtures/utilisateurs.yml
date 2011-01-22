@@ -1,0 +1,37 @@
+Utilisateur:
+  Neil:
+    utilisateur_nom: Peyssard
+    utilisateur_prenom: Neil
+    utilisateur_email: neilpeyssard44@gmail.com
+    utilisateur_pseudo: Neil
+    utilisateur_motdepasse: utopie
+    utilisateur_photo: no-photo.jpg
+    created_at: '2011-01-20'
+    updated_at: '2011-01-20'
+  Tony:
+    utilisateur_nom: Cois
+    utilisateur_prenom: Tony
+    utilisateur_email: cois.tony@gmail.com
+    utilisateur_pseudo: Tony
+    utilisateur_motdepasse: picaddy
+    utilisateur_photo: no-photo.jpg
+    created_at: '2011-01-20'
+    updated_at: '2011-01-20'
+  Nicolas:
+    utilisateur_nom: Tephany
+    utilisateur_prenom: Nicolas
+    utilisateur_email: tephanyn@gmail.com
+    utilisateur_pseudo: Nicolas
+    utilisateur_motdepasse: picaddy
+    utilisateur_photo: no-photo.jpg
+    created_at: '2011-01-20'
+    updated_at: '2011-01-20'
+  Guillaume:
+    utilisateur_nom: Denance
+    utilisateur_prenom: Guillaume
+    utilisateur_email: g.denance@gmail.com
+    utilisateur_pseudo: Guillaume
+    utilisateur_motdepasse: picaddy
+    utilisateur_photo: no-photo.jpg
+    created_at: '2011-01-20'
+    updated_at: '2011-01-20'

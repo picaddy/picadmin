@@ -1,0 +1,696 @@
+Jan 22 00:18:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jan 22 00:18:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:18:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:18:08 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jan 22 00:18:08 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Jan 22 00:18:08 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 22 00:18:08 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 22 00:18:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:18:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:18:08 symfony [info] {sfWebDebugLogger} Configuration 205.50 ms (10)
+Jan 22 00:18:08 symfony [info] {sfWebDebugLogger} Factories 342.52 ms (1)
+Jan 22 00:18:08 symfony [info] {sfWebDebugLogger} Action "default/index" 0.09 ms (1)
+Jan 22 00:18:08 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 90.58 ms (1)
+Jan 22 00:18:08 symfony [info] {sfWebResponse} Send content (28648 o)
+Jan 22 00:18:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:18:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:18:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:18:12 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:18:12 symfony [info] {mainActions} Forward to action "default/module"
+Jan 22 00:18:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:18:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:18:12 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Jan 22 00:18:12 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/moduleSuccess.php"
+Jan 22 00:18:12 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 22 00:18:12 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 22 00:18:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:18:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:18:12 symfony [info] {sfWebDebugLogger} Configuration 20.29 ms (13)
+Jan 22 00:18:12 symfony [info] {sfWebDebugLogger} Factories 36.88 ms (1)
+Jan 22 00:18:12 symfony [info] {sfWebDebugLogger} Action "main/index" 30.29 ms (1)
+Jan 22 00:18:12 symfony [info] {sfWebDebugLogger} Action "default/module" 0.01 ms (1)
+Jan 22 00:18:12 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 30.07 ms (1)
+Jan 22 00:18:12 symfony [info] {sfWebResponse} Send content (30812 o)
+Jan 22 00:18:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:18:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:18:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:18:45 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:18:45 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:18:45 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:18:45 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:18:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:18:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:18:45 symfony [info] {sfWebDebugLogger} Configuration 16.60 ms (10)
+Jan 22 00:18:45 symfony [info] {sfWebDebugLogger} Factories 47.41 ms (1)
+Jan 22 00:18:45 symfony [info] {sfWebDebugLogger} Action "main/index" 0.88 ms (1)
+Jan 22 00:18:45 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 39.04 ms (1)
+Jan 22 00:18:45 symfony [info] {sfWebResponse} Send content (35005 o)
+Jan 22 00:18:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:18:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:18:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:18:47 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:18:47 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:18:47 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:18:47 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:18:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:18:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:18:47 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (9)
+Jan 22 00:18:47 symfony [info] {sfWebDebugLogger} Factories 80.37 ms (1)
+Jan 22 00:18:47 symfony [info] {sfWebDebugLogger} Action "main/index" 0.00 ms (1)
+Jan 22 00:18:47 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 25.36 ms (1)
+Jan 22 00:18:47 symfony [info] {sfWebResponse} Send content (35002 o)
+Jan 22 00:22:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:22:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:22:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:22:14 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:22:14 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:22:14 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:22:14 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:22:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:22:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:22:14 symfony [info] {sfWebDebugLogger} Configuration 20.04 ms (10)
+Jan 22 00:22:14 symfony [info] {sfWebDebugLogger} Factories 60.64 ms (1)
+Jan 22 00:22:14 symfony [info] {sfWebDebugLogger} Action "main/index" 0.08 ms (1)
+Jan 22 00:22:14 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 41.37 ms (1)
+Jan 22 00:22:14 symfony [info] {sfWebResponse} Send content (36657 o)
+Jan 22 00:34:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:34:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:34:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:34:29 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:34:29 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:34:29 symfony [notice] {sfWebDebugLogger}  Notice at /media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php on line 2 (Undefined variable: objet_projet)
+Jan 22 00:35:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:35:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:35:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:35:12 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:35:12 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:35:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:35:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:35:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 00:35:12 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:35:12 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:35:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:35:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:35:12 symfony [info] {sfWebDebugLogger} Configuration 0.77 ms (9)
+Jan 22 00:35:12 symfony [info] {sfWebDebugLogger} Factories 66.92 ms (1)
+Jan 22 00:35:12 symfony [info] {sfWebDebugLogger} Action "main/index" 29.76 ms (1)
+Jan 22 00:35:12 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 192.40 ms (1)
+Jan 22 00:35:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (3)
+Jan 22 00:35:12 symfony [info] {sfWebResponse} Send content (42258 o)
+Jan 22 00:37:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:37:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:37:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:37:10 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:37:10 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:37:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:37:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:37:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 00:37:10 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:37:10 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:37:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:37:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:37:10 symfony [info] {sfWebDebugLogger} Configuration 2.95 ms (9)
+Jan 22 00:37:10 symfony [info] {sfWebDebugLogger} Factories 39.10 ms (1)
+Jan 22 00:37:10 symfony [info] {sfWebDebugLogger} Action "main/index" 24.14 ms (1)
+Jan 22 00:37:10 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 58.47 ms (1)
+Jan 22 00:37:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Jan 22 00:37:10 symfony [info] {sfWebResponse} Send content (42258 o)
+Jan 22 00:44:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:44:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:44:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:44:43 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:44:43 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:44:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:44:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:44:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 00:44:43 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:44:43 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:44:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:44:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:44:43 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Jan 22 00:44:43 symfony [info] {sfWebDebugLogger} Factories 60.14 ms (1)
+Jan 22 00:44:43 symfony [info] {sfWebDebugLogger} Action "main/index" 37.08 ms (1)
+Jan 22 00:44:43 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 142.94 ms (1)
+Jan 22 00:44:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jan 22 00:44:43 symfony [info] {sfWebResponse} Send content (48693 o)
+Jan 22 00:44:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_yellow.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_yellow.gif' => true,)
+Jan 22 00:44:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_red.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_red.gif' => true,)
+Jan 22 00:44:44 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:44:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_blue.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_blue.gif' => true,)
+Jan 22 00:44:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_green.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_green.gif' => true,)
+Jan 22 00:44:44 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (5)
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Factories 209.57 ms (1)
+Jan 22 00:44:44 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:44:44 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Factories 382.34 ms (1)
+Jan 22 00:44:44 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:44:44 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Configuration 3.49 ms (5)
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Factories 463.97 ms (1)
+Jan 22 00:44:44 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:44:44 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:44:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Configuration 25.36 ms (5)
+Jan 22 00:44:44 symfony [info] {sfWebDebugLogger} Factories 588.52 ms (1)
+Jan 22 00:44:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_yellow.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_yellow.gif' => true,)
+Jan 22 00:44:45 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:44:45 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:44:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:44:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:44:45 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jan 22 00:44:45 symfony [info] {sfWebDebugLogger} Factories 187.39 ms (1)
+Jan 22 00:44:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_red.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_red.gif' => true,)
+Jan 22 00:44:45 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:44:45 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:44:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:44:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:44:45 symfony [info] {sfWebDebugLogger} Configuration 7.63 ms (5)
+Jan 22 00:44:45 symfony [info] {sfWebDebugLogger} Factories 319.68 ms (1)
+Jan 22 00:50:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:50:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:50:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:50:48 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:50:48 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:50:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:50:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:50:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 00:50:48 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:50:48 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:50:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:50:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:50:48 symfony [info] {sfWebDebugLogger} Configuration 0.65 ms (9)
+Jan 22 00:50:48 symfony [info] {sfWebDebugLogger} Factories 76.17 ms (1)
+Jan 22 00:50:48 symfony [info] {sfWebDebugLogger} Action "main/index" 30.31 ms (1)
+Jan 22 00:50:48 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 110.90 ms (1)
+Jan 22 00:50:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (3)
+Jan 22 00:50:48 symfony [info] {sfWebResponse} Send content (48973 o)
+Jan 22 00:50:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_green.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_green.gif' => true,)
+Jan 22 00:50:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_red.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_red.gif' => true,)
+Jan 22 00:50:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_blue.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_blue.gif' => true,)
+Jan 22 00:50:49 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:50:49 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:50:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:50:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:50:49 symfony [info] {sfWebDebugLogger} Configuration 5.49 ms (5)
+Jan 22 00:50:49 symfony [info] {sfWebDebugLogger} Factories 149.53 ms (1)
+Jan 22 00:50:49 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:50:49 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:50:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:50:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:50:49 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (5)
+Jan 22 00:50:49 symfony [info] {sfWebDebugLogger} Factories 304.56 ms (1)
+Jan 22 00:50:49 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:50:49 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:50:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:50:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:50:49 symfony [info] {sfWebDebugLogger} Configuration 0.59 ms (5)
+Jan 22 00:50:49 symfony [info] {sfWebDebugLogger} Factories 390.63 ms (1)
+Jan 22 00:50:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_red.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_red.gif' => true,)
+Jan 22 00:50:50 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:50:50 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:50:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_green.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_green.gif' => true,)
+Jan 22 00:50:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:50:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:50:50 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Jan 22 00:50:50 symfony [info] {sfWebDebugLogger} Factories 249.36 ms (1)
+Jan 22 00:50:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/table/icon_close_blue.gif with parameters array (  'module' => 'images',  'action' => 'table',  'icon_close_blue.gif' => true,)
+Jan 22 00:50:50 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:50:50 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:50:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:50:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:50:50 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (5)
+Jan 22 00:50:50 symfony [info] {sfWebDebugLogger} Factories 232.52 ms (1)
+Jan 22 00:50:51 symfony [info] {sfFrontWebController} Action "images/table" does not exist
+Jan 22 00:50:51 symfony [err] {sfError404Exception} Action "images/table" does not exist.
+Jan 22 00:50:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 22 00:50:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:50:51 symfony [info] {sfWebDebugLogger} Configuration 1.71 ms (5)
+Jan 22 00:50:51 symfony [info] {sfWebDebugLogger} Factories 452.44 ms (1)
+Jan 22 00:51:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:51:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:51:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:51:19 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:51:19 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:51:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:51:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:51:19 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 00:51:19 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:51:19 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:51:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:51:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:51:19 symfony [info] {sfWebDebugLogger} Configuration 10.69 ms (9)
+Jan 22 00:51:19 symfony [info] {sfWebDebugLogger} Factories 159.77 ms (1)
+Jan 22 00:51:19 symfony [info] {sfWebDebugLogger} Action "main/index" 57.23 ms (1)
+Jan 22 00:51:19 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 185.32 ms (1)
+Jan 22 00:51:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 00:51:19 symfony [info] {sfWebResponse} Send content (48984 o)
+Jan 22 00:56:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:57:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:57:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:57:00 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:57:00 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:57:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:57:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:57:00 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:57:00 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:57:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:57:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:57:00 symfony [info] {sfWebDebugLogger} Configuration 1.90 ms (9)
+Jan 22 00:57:00 symfony [info] {sfWebDebugLogger} Factories 207.91 ms (1)
+Jan 22 00:57:00 symfony [info] {sfWebDebugLogger} Action "main/index" 80.83 ms (1)
+Jan 22 00:57:00 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 64.40 ms (1)
+Jan 22 00:57:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 22 00:57:00 symfony [info] {sfWebResponse} Send content (43703 o)
+Jan 22 00:58:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:58:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:58:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:58:20 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:58:20 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:58:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:58:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:58:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 00:58:20 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:58:20 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:58:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:58:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:58:20 symfony [info] {sfWebDebugLogger} Configuration 1.53 ms (9)
+Jan 22 00:58:20 symfony [info] {sfWebDebugLogger} Factories 69.59 ms (1)
+Jan 22 00:58:20 symfony [info] {sfWebDebugLogger} Action "main/index" 16.98 ms (1)
+Jan 22 00:58:20 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 117.27 ms (1)
+Jan 22 00:58:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 00:58:20 symfony [info] {sfWebResponse} Send content (45626 o)
+Jan 22 00:58:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 00:58:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 00:58:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 00:58:55 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 00:58:55 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 00:58:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 00:58:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 00:58:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 00:58:55 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:58:55 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 00:58:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 00:58:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 00:58:55 symfony [info] {sfWebDebugLogger} Configuration 1.99 ms (9)
+Jan 22 00:58:55 symfony [info] {sfWebDebugLogger} Factories 81.14 ms (1)
+Jan 22 00:58:55 symfony [info] {sfWebDebugLogger} Action "main/index" 48.31 ms (1)
+Jan 22 00:58:55 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 114.15 ms (1)
+Jan 22 00:58:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.09 ms (3)
+Jan 22 00:58:55 symfony [info] {sfWebResponse} Send content (45639 o)
+Jan 22 01:00:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:00:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:00:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:00:17 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:00:17 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:00:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:00:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:00:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:00:17 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projet_statut" on "Projet"
+Jan 22 01:00:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:00:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:00:17 symfony [info] {sfWebDebugLogger} Configuration 0.30 ms (9)
+Jan 22 01:00:17 symfony [info] {sfWebDebugLogger} Factories 80.30 ms (1)
+Jan 22 01:00:17 symfony [info] {sfWebDebugLogger} Action "main/index" 21.56 ms (1)
+Jan 22 01:00:17 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 239.89 ms (1)
+Jan 22 01:00:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 01:01:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:01:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:01:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:01:31 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:01:31 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:01:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:01:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:01:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:01:31 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projet_to_statut" on "Projet"
+Jan 22 01:01:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:01:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:01:31 symfony [info] {sfWebDebugLogger} Configuration 1.00 ms (9)
+Jan 22 01:01:31 symfony [info] {sfWebDebugLogger} Factories 90.14 ms (1)
+Jan 22 01:01:31 symfony [info] {sfWebDebugLogger} Action "main/index" 26.71 ms (1)
+Jan 22 01:01:31 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 200.23 ms (1)
+Jan 22 01:01:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 01:01:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:01:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:01:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:01:59 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:02:00 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:02:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:02:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:02:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:02:00 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:02:00 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:02:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:02:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:02:00 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (9)
+Jan 22 01:02:00 symfony [info] {sfWebDebugLogger} Factories 54.53 ms (1)
+Jan 22 01:02:00 symfony [info] {sfWebDebugLogger} Action "main/index" 21.17 ms (1)
+Jan 22 01:02:00 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 128.72 ms (1)
+Jan 22 01:02:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Jan 22 01:02:00 symfony [info] {sfWebResponse} Send content (45602 o)
+Jan 22 01:02:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:02:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:02:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:02:13 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:02:13 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:02:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:02:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:02:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:02:13 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projet_statut" on "Projet"
+Jan 22 01:02:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:02:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:02:13 symfony [info] {sfWebDebugLogger} Configuration 0.61 ms (9)
+Jan 22 01:02:13 symfony [info] {sfWebDebugLogger} Factories 60.50 ms (1)
+Jan 22 01:02:13 symfony [info] {sfWebDebugLogger} Action "main/index" 20.18 ms (1)
+Jan 22 01:02:13 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 270.15 ms (1)
+Jan 22 01:02:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.47 ms (3)
+Jan 22 01:03:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:03:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:03:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:03:12 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:03:12 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:03:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:03:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:03:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:03:13 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projet_statut" on "Projet"
+Jan 22 01:03:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:03:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:03:13 symfony [info] {sfWebDebugLogger} Configuration 2.24 ms (9)
+Jan 22 01:03:13 symfony [info] {sfWebDebugLogger} Factories 101.14 ms (1)
+Jan 22 01:03:13 symfony [info] {sfWebDebugLogger} Action "main/index" 29.81 ms (1)
+Jan 22 01:03:13 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 226.58 ms (1)
+Jan 22 01:03:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Jan 22 01:03:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:03:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:03:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:03:21 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:03:21 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:03:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:03:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:03:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:03:21 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:03:21 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:03:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:03:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:03:21 symfony [info] {sfWebDebugLogger} Configuration 9.36 ms (9)
+Jan 22 01:03:21 symfony [info] {sfWebDebugLogger} Factories 162.00 ms (1)
+Jan 22 01:03:21 symfony [info] {sfWebDebugLogger} Action "main/index" 97.93 ms (1)
+Jan 22 01:03:21 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 142.09 ms (1)
+Jan 22 01:03:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Jan 22 01:03:21 symfony [info] {sfWebResponse} Send content (45604 o)
+Jan 22 01:05:04 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:05:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:05:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:05:04 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:05:04 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:05:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:05:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:05:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:05:04 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:05:04 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:05:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:05:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:05:04 symfony [info] {sfWebDebugLogger} Configuration 204.97 ms (9)
+Jan 22 01:05:04 symfony [info] {sfWebDebugLogger} Factories 192.61 ms (1)
+Jan 22 01:05:04 symfony [info] {sfWebDebugLogger} Action "main/index" 30.30 ms (1)
+Jan 22 01:05:04 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 89.83 ms (1)
+Jan 22 01:05:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 01:05:04 symfony [info] {sfWebResponse} Send content (45606 o)
+Jan 22 01:05:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:05:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:05:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:05:23 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:05:23 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:05:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:05:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:05:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:05:23 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projet_statut" on "Projet"
+Jan 22 01:05:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:05:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:05:23 symfony [info] {sfWebDebugLogger} Configuration 5.83 ms (9)
+Jan 22 01:05:23 symfony [info] {sfWebDebugLogger} Factories 300.04 ms (1)
+Jan 22 01:05:23 symfony [info] {sfWebDebugLogger} Action "main/index" 85.12 ms (1)
+Jan 22 01:05:23 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 215.14 ms (1)
+Jan 22 01:05:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 01:07:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:07:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:07:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:07:58 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:07:58 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:07:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:07:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:07:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:07:58 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projet" on "Projet"
+Jan 22 01:07:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:07:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:07:59 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (9)
+Jan 22 01:07:59 symfony [info] {sfWebDebugLogger} Factories 103.86 ms (1)
+Jan 22 01:07:59 symfony [info] {sfWebDebugLogger} Action "main/index" 30.13 ms (1)
+Jan 22 01:07:59 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 379.37 ms (1)
+Jan 22 01:07:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.62 ms (3)
+Jan 22 01:08:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:08:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:08:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:08:13 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:08:13 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:08:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:08:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:08:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:08:14 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projet_statut" on "Projet"
+Jan 22 01:08:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:08:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:08:14 symfony [info] {sfWebDebugLogger} Configuration 1.20 ms (9)
+Jan 22 01:08:14 symfony [info] {sfWebDebugLogger} Factories 150.21 ms (1)
+Jan 22 01:08:14 symfony [info] {sfWebDebugLogger} Action "main/index" 93.02 ms (1)
+Jan 22 01:08:14 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 537.89 ms (1)
+Jan 22 01:08:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 01:10:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:10:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:10:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:10:01 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:10:01 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:10:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:10:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:10:01 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "projets_type" on "Projet"
+Jan 22 01:10:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 22 01:10:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:10:01 symfony [info] {sfWebDebugLogger} Configuration 3.32 ms (9)
+Jan 22 01:10:01 symfony [info] {sfWebDebugLogger} Factories 89.61 ms (1)
+Jan 22 01:10:01 symfony [info] {sfWebDebugLogger} Action "main/index" 41.77 ms (1)
+Jan 22 01:10:01 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 190.53 ms (1)
+Jan 22 01:10:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Jan 22 01:10:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:10:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:10:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:10:12 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:10:12 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:10:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:10:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:10:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:10:12 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:10:12 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:10:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:10:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:10:12 symfony [info] {sfWebDebugLogger} Configuration 0.63 ms (9)
+Jan 22 01:10:12 symfony [info] {sfWebDebugLogger} Factories 89.72 ms (1)
+Jan 22 01:10:12 symfony [info] {sfWebDebugLogger} Action "main/index" 41.61 ms (1)
+Jan 22 01:10:12 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 99.48 ms (1)
+Jan 22 01:10:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (3)
+Jan 22 01:10:12 symfony [info] {sfWebResponse} Send content (45601 o)
+Jan 22 01:12:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:12:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:12:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:12:55 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:12:55 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:12:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:12:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:12:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:12:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:12:56 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:12:56 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:12:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:12:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:12:56 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (9)
+Jan 22 01:12:56 symfony [info] {sfWebDebugLogger} Factories 68.91 ms (1)
+Jan 22 01:12:56 symfony [info] {sfWebDebugLogger} Action "main/index" 18.53 ms (1)
+Jan 22 01:12:56 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 93.00 ms (1)
+Jan 22 01:12:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.13 ms (4)
+Jan 22 01:12:56 symfony [info] {sfWebResponse} Send content (47897 o)
+Jan 22 01:15:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:15:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:15:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:15:15 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:15:15 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:15:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:15:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:15:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:15:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:15:15 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:15:15 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:15:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:15:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:15:15 symfony [info] {sfWebDebugLogger} Configuration 1.43 ms (9)
+Jan 22 01:15:15 symfony [info] {sfWebDebugLogger} Factories 67.95 ms (1)
+Jan 22 01:15:15 symfony [info] {sfWebDebugLogger} Action "main/index" 59.91 ms (1)
+Jan 22 01:15:15 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 239.57 ms (1)
+Jan 22 01:15:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Jan 22 01:15:15 symfony [info] {sfWebResponse} Send content (47899 o)
+Jan 22 01:18:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:18:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:18:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:18:29 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:18:29 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:18:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:18:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:18:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:18:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:18:29 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:18:29 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:18:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:18:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:18:30 symfony [info] {sfWebDebugLogger} Configuration 3.88 ms (9)
+Jan 22 01:18:30 symfony [info] {sfWebDebugLogger} Factories 148.37 ms (1)
+Jan 22 01:18:30 symfony [info] {sfWebDebugLogger} Action "main/index" 29.34 ms (1)
+Jan 22 01:18:30 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 120.29 ms (1)
+Jan 22 01:18:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (4)
+Jan 22 01:18:30 symfony [info] {sfWebResponse} Send content (47923 o)
+Jan 22 01:19:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:19:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:19:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:19:29 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:19:29 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:19:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:19:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:19:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:19:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:19:29 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:19:29 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:19:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:19:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:19:29 symfony [info] {sfWebDebugLogger} Configuration 22.32 ms (9)
+Jan 22 01:19:29 symfony [info] {sfWebDebugLogger} Factories 110.89 ms (1)
+Jan 22 01:19:29 symfony [info] {sfWebDebugLogger} Action "main/index" 89.84 ms (1)
+Jan 22 01:19:29 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 221.48 ms (1)
+Jan 22 01:19:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.77 ms (4)
+Jan 22 01:19:29 symfony [info] {sfWebResponse} Send content (47930 o)
+Jan 22 01:20:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:20:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:20:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:20:45 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:20:45 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:20:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:20:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:20:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:20:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:20:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:20:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:20:46 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:20:46 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:20:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:20:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:20:46 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (9)
+Jan 22 01:20:46 symfony [info] {sfWebDebugLogger} Factories 57.72 ms (1)
+Jan 22 01:20:46 symfony [info] {sfWebDebugLogger} Action "main/index" 29.97 ms (1)
+Jan 22 01:20:46 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 188.98 ms (1)
+Jan 22 01:20:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jan 22 01:20:46 symfony [info] {sfWebResponse} Send content (52674 o)
+Jan 22 01:58:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:58:27 symfony [info] {myUser} Automatic user logout due to timeout
+Jan 22 01:58:27 symfony [info] {myUser} User is not authenticated
+Jan 22 01:58:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:58:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:58:27 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:58:27 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:58:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:58:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:58:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:58:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:58:27 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:58:27 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:58:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:58:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:58:27 symfony [info] {sfWebDebugLogger} Configuration 0.62 ms (9)
+Jan 22 01:58:27 symfony [info] {sfWebDebugLogger} Factories 158.89 ms (1)
+Jan 22 01:58:27 symfony [info] {sfWebDebugLogger} Action "main/index" 59.54 ms (1)
+Jan 22 01:58:27 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 280.81 ms (1)
+Jan 22 01:58:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Jan 22 01:58:27 symfony [info] {sfWebResponse} Send content (48752 o)
+Jan 22 01:58:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 01:58:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 01:58:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 01:58:45 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 01:58:45 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 01:58:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 01:58:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 01:58:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 01:58:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 01:58:45 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:58:45 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 01:58:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 01:58:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 01:58:45 symfony [info] {sfWebDebugLogger} Configuration 0.17 ms (9)
+Jan 22 01:58:45 symfony [info] {sfWebDebugLogger} Factories 71.99 ms (1)
+Jan 22 01:58:45 symfony [info] {sfWebDebugLogger} Action "main/index" 29.98 ms (1)
+Jan 22 01:58:45 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 90.16 ms (1)
+Jan 22 01:58:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Jan 22 01:58:45 symfony [info] {sfWebResponse} Send content (48044 o)
+Jan 22 02:00:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 02:00:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 02:00:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 02:00:15 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 02:00:15 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 02:00:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 02:00:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 02:00:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 02:00:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 02:00:15 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 02:00:15 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 02:00:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 02:00:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 02:00:15 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (9)
+Jan 22 02:00:15 symfony [info] {sfWebDebugLogger} Factories 79.76 ms (1)
+Jan 22 02:00:15 symfony [info] {sfWebDebugLogger} Action "main/index" 30.40 ms (1)
+Jan 22 02:00:15 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 209.89 ms (1)
+Jan 22 02:00:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (4)
+Jan 22 02:00:15 symfony [info] {sfWebResponse} Send content (48163 o)
+Jan 22 14:24:15 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jan 22 14:24:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 14:24:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 14:24:15 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jan 22 14:24:15 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Jan 22 14:24:15 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 22 14:24:15 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 22 14:24:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 14:24:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 14:24:15 symfony [info] {sfWebDebugLogger} Configuration 146.62 ms (10)
+Jan 22 14:24:15 symfony [info] {sfWebDebugLogger} Factories 420.81 ms (1)
+Jan 22 14:24:15 symfony [info] {sfWebDebugLogger} Action "default/index" 0.14 ms (1)
+Jan 22 14:24:15 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 106.26 ms (1)
+Jan 22 14:24:16 symfony [info] {sfWebResponse} Send content (30301 o)
+Jan 22 14:24:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jan 22 14:24:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 22 14:24:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 22 14:24:22 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jan 22 14:24:22 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/modules/main/templates/indexSuccess.php"
+Jan 22 14:24:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 22 14:24:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.projet_nom AS p__projet_nom, p.projet_description AS p__projet_description, p.projet_date_debut AS p__projet_date_debut, p.projet_date_fin AS p__projet_date_fin, p.projet_type_id AS p__projet_type_id, p.projet_statut_id AS p__projet_statut_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet p - ()
+Jan 22 14:24:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.projet_type_nom AS p__projet_type_nom, p.projet_type_code AS p__projet_type_code, p.projet_type_couleur AS p__projet_type_couleur, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projet_type p WHERE (p.id = ?) - (1)
+Jan 22 14:24:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.statut_nom AS s__statut_nom, s.statut_code AS s__statut_code, s.statut_couleur AS s__statut_couleur, s.statut_bug AS s__statut_bug, s.statut_idee AS s__statut_idee, s.statut_tache AS s__statut_tache, s.statut_projet AS s__statut_projet, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM statut s WHERE (s.id = ?) - (6)
+Jan 22 14:24:23 symfony [info] {sfPHPView} Decorate content with "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 14:24:23 symfony [info] {sfPHPView} Render "/media/www-dev/private/gestiondeprojet/apps/backend/templates/layout.php"
+Jan 22 14:24:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 22 14:24:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 22 14:24:23 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
+Jan 22 14:24:23 symfony [info] {sfWebDebugLogger} Factories 41.76 ms (1)
+Jan 22 14:24:23 symfony [info] {sfWebDebugLogger} Action "main/index" 186.08 ms (1)
+Jan 22 14:24:23 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 449.80 ms (1)
+Jan 22 14:24:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.67 ms (4)
+Jan 22 14:24:23 symfony [info] {sfWebResponse} Send content (48132 o)

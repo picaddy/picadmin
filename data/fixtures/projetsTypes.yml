@@ -1,0 +1,13 @@
+ProjetType:
+  Developpement web:
+    projet_type_nom: Developpement web
+    projet_type_code: A
+    projet_type_couleur: 4db44a
+    created_at: '2010-01-20'
+    updated_at: '2010-01-20'
+  Developpement mobile:
+    projet_type_nom: Developpement mobile
+    projet_type_code: B
+    projet_type_couleur: ff0000
+    created_at: '2010-01-20'
+    updated_at: '2010-01-20'
