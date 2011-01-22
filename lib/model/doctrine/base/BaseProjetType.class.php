@@ -9,18 +9,15 @@
  * @property string $projet_type_code
  * @property string $projet_type_couleur
  * @property Doctrine_Collection $Projets
- * @property Doctrine_Collection $ProjetTypeToIdee
  * 
  * @method string              getProjetTypeNom()       Returns the current record's "projet_type_nom" value
  * @method string              getProjetTypeCode()      Returns the current record's "projet_type_code" value
  * @method string              getProjetTypeCouleur()   Returns the current record's "projet_type_couleur" value
  * @method Doctrine_Collection getProjets()             Returns the current record's "Projets" collection
- * @method Doctrine_Collection getProjetTypeToIdee()    Returns the current record's "ProjetTypeToIdee" collection
  * @method ProjetType          setProjetTypeNom()       Sets the current record's "projet_type_nom" value
  * @method ProjetType          setProjetTypeCode()      Sets the current record's "projet_type_code" value
  * @method ProjetType          setProjetTypeCouleur()   Sets the current record's "projet_type_couleur" value
  * @method ProjetType          setProjets()             Sets the current record's "Projets" collection
- * @method ProjetType          setProjetTypeToIdee()    Sets the current record's "ProjetTypeToIdee" collection
  * 
  * @package    adminpicaddy
  * @subpackage model
@@ -56,10 +53,6 @@ abstract class BaseProjetType extends sfDoctrineRecord
         $this->hasMany('Projet as Projets', array(
              'local' => 'id',
              'foreign' => 'projet_type_id'));
-
-        $this->hasMany('Idee as ProjetTypeToIdee', array(
-             'local' => 'id',
-             'foreign' => 'idee_projet_type_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

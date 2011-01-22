@@ -19,7 +19,9 @@ abstract class BaseCommentaireForm extends BaseFormDoctrine
       'commentaire_description'    => new sfWidgetFormTextarea(),
       'commentaire_idee_id'        => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Idee'), 'add_empty' => false)),
       'commentaire_tache_id'       => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Tache'), 'add_empty' => false)),
+      'commentaire_bug_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Bug'), 'add_empty' => false)),
       'commentaire_utilisateur_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Utilisateur'), 'add_empty' => false)),
+      'commentaire_parent_id'      => new sfWidgetFormInputText(),
       'created_at'                 => new sfWidgetFormDateTime(),
       'updated_at'                 => new sfWidgetFormDateTime(),
     ));
@@ -29,7 +31,9 @@ abstract class BaseCommentaireForm extends BaseFormDoctrine
       'commentaire_description'    => new sfValidatorString(array('max_length' => 1500)),
       'commentaire_idee_id'        => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Idee'))),
       'commentaire_tache_id'       => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Tache'))),
+      'commentaire_bug_id'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Bug'))),
       'commentaire_utilisateur_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Utilisateur'))),
+      'commentaire_parent_id'      => new sfValidatorInteger(),
       'created_at'                 => new sfValidatorDateTime(),
       'updated_at'                 => new sfValidatorDateTime(),
     ));

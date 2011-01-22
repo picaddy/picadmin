@@ -18,6 +18,7 @@
  * @property Doctrine_Collection $UtilisateurToIdee
  * @property Doctrine_Collection $UtilisateurToBugBis
  * @property Doctrine_Collection $UtilisateurToNote
+ * @property Doctrine_Collection $UtilisateurToDocument
  * 
  * @method string              getUtilisateurNom()           Returns the current record's "utilisateur_nom" value
  * @method string              getUtilisateurPrenom()        Returns the current record's "utilisateur_prenom" value
@@ -32,6 +33,7 @@
  * @method Doctrine_Collection getUtilisateurToIdee()        Returns the current record's "UtilisateurToIdee" collection
  * @method Doctrine_Collection getUtilisateurToBugBis()      Returns the current record's "UtilisateurToBugBis" collection
  * @method Doctrine_Collection getUtilisateurToNote()        Returns the current record's "UtilisateurToNote" collection
+ * @method Doctrine_Collection getUtilisateurToDocument()    Returns the current record's "UtilisateurToDocument" collection
  * @method Utilisateur         setUtilisateurNom()           Sets the current record's "utilisateur_nom" value
  * @method Utilisateur         setUtilisateurPrenom()        Sets the current record's "utilisateur_prenom" value
  * @method Utilisateur         setUtilisateurEmail()         Sets the current record's "utilisateur_email" value
@@ -45,6 +47,7 @@
  * @method Utilisateur         setUtilisateurToIdee()        Sets the current record's "UtilisateurToIdee" collection
  * @method Utilisateur         setUtilisateurToBugBis()      Sets the current record's "UtilisateurToBugBis" collection
  * @method Utilisateur         setUtilisateurToNote()        Sets the current record's "UtilisateurToNote" collection
+ * @method Utilisateur         setUtilisateurToDocument()    Sets the current record's "UtilisateurToDocument" collection
  * 
  * @package    adminpicaddy
  * @subpackage model
@@ -119,6 +122,10 @@ abstract class BaseUtilisateur extends sfDoctrineRecord
         $this->hasMany('Note as UtilisateurToNote', array(
              'local' => 'id',
              'foreign' => 'note_utilisateur_id'));
+
+        $this->hasMany('Document as UtilisateurToDocument', array(
+             'local' => 'id',
+             'foreign' => 'document_utilisateur_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

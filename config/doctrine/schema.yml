@@ -90,11 +90,14 @@ Commentaire:
     commentaire_description: { type: string(1500), notnull: true }
     commentaire_idee_id: { type: integer, notnull: true }
     commentaire_tache_id: { type: integer, notnull: true }
+    commentaire_bug_id: { type: integer, notnull: true }
     commentaire_utilisateur_id: { type: integer, notnull: true }
+    commentaire_parent_id: { type: integer, notnull: true }
   relations:
     Utilisateur: { onDelete: CASCADE, local: commentaire_utilisateur_id, foreign: id, foreignAlias: UtilisateurToCommentaire }
     Tache: { onDelete: CASCADE, local: commentaire_tache_id, foreign: id, foreignAlias: CommentaireToTache }
     Idee: { onDelete: CASCADE, local: commentaire_idee_id, foreign: id, foreignAlias: CommentaireToIdee }
+    Bug: { onDelete: CASCADE, local: commentaire_bug_id, foreign: id, foreignAlias: CommentaireToBug }
 
 Idee:
   actAs: { Timestampable: ~ }
@@ -102,11 +105,11 @@ Idee:
     idee_nom: { type: string(255), notnull: true }
     idee_description: { type: string(1500), notnull: true }
     idee_utilisateur_id: { type: integer, notnull: true }
-    idee_projet_type_id: { type: integer, notnull: true }
+    idee_projet_id: { type: integer, notnull: true }
     idee_statut_id: { type: integer, notnull: true }
   relations:
     Utilisateur: { onDelete: CASCADE, local: idee_utilisateur_id, foreign: id, foreignAlias: UtilisateurToIdee }
-    ProjetType: { onDelete: CASCADE, local: idee_projet_type_id, foreign: id, foreignAlias: ProjetTypeToIdee }
+    Projet: { onDelete: CASCADE, local: idee_projet_id, foreign: id, foreignAlias: ProjetToIdee }
     Statut: { onDelete: CASCADE, local: idee_statut_id, foreign: id, foreignAlias: StatutToIdee }
 
 Bug:
@@ -114,6 +117,7 @@ Bug:
   columns:
     bug_url: { type: string(255), notnull: true }
     bug_description: { type: string(1500), notnull: true }
+    bug_projet_id: { type: integer, notnull: true }
     bug_auteur_id: { type: integer, notnull: true }
     bug_referent_id: { type: integer, notnull: true }
     bug_statut_id: { type: integer, notnull: true }
@@ -121,6 +125,7 @@ Bug:
     Utilisateur: { onDelete: CASCADE, local: bug_auteur_id, foreign: id, foreignAlias: UtilisateurToBug }
     Utilisateur: { onDelete: CASCADE, local: bug_referent_id, foreign: id, foreignAlias: UtilisateurToBugBis }
     Statut: { onDelete: CASCADE, local: bug_statut_id, foreign: id, foreignAlias: StatutToBug }
+    Projet: { onDelete: CASCADE, local: bug_projet_id, foreign: id, foreignAlias: ProjetToBug }
 
 Note:
   actAs: { Timestampable: ~ }
@@ -134,10 +139,14 @@ Note:
 Document:
   columns:
     document_nom: { type: string(255), notnull: true }
-    document_note_id: { type: integer, notnull: true }
+    document_projet_id: { type: integer, notnull: true }
+    document_tache_id: { type: integer, notnull: true }
     document_idee_id: { type: integer, notnull: true }
     document_bug_id: { type: integer, notnull: true }
+    document_utilisateur_id: { type: integer, notnull: true }
   relations:
-    Note: { onDelete: CASCADE, local: document_note_id, foreign: id, foreignAlias: NoteToDocument }
+    Projet: { onDelete: CASCADE, local: document_projet_id, foreign: id, foreignAlias: ProjetToDocument }
+    Tache: { onDelete: CASCADE, local: document_tache_id, foreign: id, foreignAlias: TacheToDocument }
     Idee: { onDelete: CASCADE, local: document_idee_id, foreign: id, foreignAlias: IdeeToDocument }
     Bug: { onDelete: CASCADE, local: document_bug_id, foreign: id, foreignAlias: BugToDocument }
+    Utilisateur: { onDelete: CASCADE, local: document_utilisateur_id, foreign: id, foreignAlias: UtilisateurToDocument }

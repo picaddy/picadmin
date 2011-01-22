@@ -8,10 +8,10 @@
  * @property string $idee_nom
  * @property string $idee_description
  * @property integer $idee_utilisateur_id
- * @property integer $idee_projet_type_id
+ * @property integer $idee_projet_id
  * @property integer $idee_statut_id
  * @property Utilisateur $Utilisateur
- * @property ProjetType $ProjetType
+ * @property Projet $Projet
  * @property Statut $Statut
  * @property Doctrine_Collection $CommentaireToIdee
  * @property Doctrine_Collection $IdeeToDocument
@@ -19,20 +19,20 @@
  * @method string              getIdeeNom()             Returns the current record's "idee_nom" value
  * @method string              getIdeeDescription()     Returns the current record's "idee_description" value
  * @method integer             getIdeeUtilisateurId()   Returns the current record's "idee_utilisateur_id" value
- * @method integer             getIdeeProjetTypeId()    Returns the current record's "idee_projet_type_id" value
+ * @method integer             getIdeeProjetId()        Returns the current record's "idee_projet_id" value
  * @method integer             getIdeeStatutId()        Returns the current record's "idee_statut_id" value
  * @method Utilisateur         getUtilisateur()         Returns the current record's "Utilisateur" value
- * @method ProjetType          getProjetType()          Returns the current record's "ProjetType" value
+ * @method Projet              getProjet()              Returns the current record's "Projet" value
  * @method Statut              getStatut()              Returns the current record's "Statut" value
  * @method Doctrine_Collection getCommentaireToIdee()   Returns the current record's "CommentaireToIdee" collection
  * @method Doctrine_Collection getIdeeToDocument()      Returns the current record's "IdeeToDocument" collection
  * @method Idee                setIdeeNom()             Sets the current record's "idee_nom" value
  * @method Idee                setIdeeDescription()     Sets the current record's "idee_description" value
  * @method Idee                setIdeeUtilisateurId()   Sets the current record's "idee_utilisateur_id" value
- * @method Idee                setIdeeProjetTypeId()    Sets the current record's "idee_projet_type_id" value
+ * @method Idee                setIdeeProjetId()        Sets the current record's "idee_projet_id" value
  * @method Idee                setIdeeStatutId()        Sets the current record's "idee_statut_id" value
  * @method Idee                setUtilisateur()         Sets the current record's "Utilisateur" value
- * @method Idee                setProjetType()          Sets the current record's "ProjetType" value
+ * @method Idee                setProjet()              Sets the current record's "Projet" value
  * @method Idee                setStatut()              Sets the current record's "Statut" value
  * @method Idee                setCommentaireToIdee()   Sets the current record's "CommentaireToIdee" collection
  * @method Idee                setIdeeToDocument()      Sets the current record's "IdeeToDocument" collection
@@ -61,7 +61,7 @@ abstract class BaseIdee extends sfDoctrineRecord
              'type' => 'integer',
              'notnull' => true,
              ));
-        $this->hasColumn('idee_projet_type_id', 'integer', null, array(
+        $this->hasColumn('idee_projet_id', 'integer', null, array(
              'type' => 'integer',
              'notnull' => true,
              ));
@@ -79,8 +79,8 @@ abstract class BaseIdee extends sfDoctrineRecord
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
 
-        $this->hasOne('ProjetType', array(
-             'local' => 'idee_projet_type_id',
+        $this->hasOne('Projet', array(
+             'local' => 'idee_projet_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
 

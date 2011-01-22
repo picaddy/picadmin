@@ -9,18 +9,15 @@
  * @property string $note_description
  * @property integer $note_utilisateur_id
  * @property Utilisateur $Utilisateur
- * @property Doctrine_Collection $NoteToDocument
  * 
- * @method string              getNoteNom()             Returns the current record's "note_nom" value
- * @method string              getNoteDescription()     Returns the current record's "note_description" value
- * @method integer             getNoteUtilisateurId()   Returns the current record's "note_utilisateur_id" value
- * @method Utilisateur         getUtilisateur()         Returns the current record's "Utilisateur" value
- * @method Doctrine_Collection getNoteToDocument()      Returns the current record's "NoteToDocument" collection
- * @method Note                setNoteNom()             Sets the current record's "note_nom" value
- * @method Note                setNoteDescription()     Sets the current record's "note_description" value
- * @method Note                setNoteUtilisateurId()   Sets the current record's "note_utilisateur_id" value
- * @method Note                setUtilisateur()         Sets the current record's "Utilisateur" value
- * @method Note                setNoteToDocument()      Sets the current record's "NoteToDocument" collection
+ * @method string      getNoteNom()             Returns the current record's "note_nom" value
+ * @method string      getNoteDescription()     Returns the current record's "note_description" value
+ * @method integer     getNoteUtilisateurId()   Returns the current record's "note_utilisateur_id" value
+ * @method Utilisateur getUtilisateur()         Returns the current record's "Utilisateur" value
+ * @method Note        setNoteNom()             Sets the current record's "note_nom" value
+ * @method Note        setNoteDescription()     Sets the current record's "note_description" value
+ * @method Note        setNoteUtilisateurId()   Sets the current record's "note_utilisateur_id" value
+ * @method Note        setUtilisateur()         Sets the current record's "Utilisateur" value
  * 
  * @package    adminpicaddy
  * @subpackage model
@@ -55,10 +52,6 @@ abstract class BaseNote extends sfDoctrineRecord
              'local' => 'note_utilisateur_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
-
-        $this->hasMany('Document as NoteToDocument', array(
-             'local' => 'id',
-             'foreign' => 'document_note_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

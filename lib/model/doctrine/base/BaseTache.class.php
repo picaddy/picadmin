@@ -18,6 +18,7 @@
  * @property Statut $Statut
  * @property Doctrine_Collection $TacheToUtilisateur
  * @property Doctrine_Collection $CommentaireToTache
+ * @property Doctrine_Collection $TacheToDocument
  * 
  * @method string              getTacheNom()           Returns the current record's "tache_nom" value
  * @method string              getTacheDescription()   Returns the current record's "tache_description" value
@@ -32,6 +33,7 @@
  * @method Statut              getStatut()             Returns the current record's "Statut" value
  * @method Doctrine_Collection getTacheToUtilisateur() Returns the current record's "TacheToUtilisateur" collection
  * @method Doctrine_Collection getCommentaireToTache() Returns the current record's "CommentaireToTache" collection
+ * @method Doctrine_Collection getTacheToDocument()    Returns the current record's "TacheToDocument" collection
  * @method Tache               setTacheNom()           Sets the current record's "tache_nom" value
  * @method Tache               setTacheDescription()   Sets the current record's "tache_description" value
  * @method Tache               setTacheDateDebut()     Sets the current record's "tache_date_debut" value
@@ -45,6 +47,7 @@
  * @method Tache               setStatut()             Sets the current record's "Statut" value
  * @method Tache               setTacheToUtilisateur() Sets the current record's "TacheToUtilisateur" collection
  * @method Tache               setCommentaireToTache() Sets the current record's "CommentaireToTache" collection
+ * @method Tache               setTacheToDocument()    Sets the current record's "TacheToDocument" collection
  * 
  * @package    adminpicaddy
  * @subpackage model
@@ -117,6 +120,10 @@ abstract class BaseTache extends sfDoctrineRecord
         $this->hasMany('Commentaire as CommentaireToTache', array(
              'local' => 'id',
              'foreign' => 'commentaire_tache_id'));
+
+        $this->hasMany('Document as TacheToDocument', array(
+             'local' => 'id',
+             'foreign' => 'document_tache_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

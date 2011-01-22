@@ -12,24 +12,27 @@
  * @property integer $bug_statut_id
  * @property Utilisateur $Utilisateur
  * @property Statut $Statut
+ * @property Doctrine_Collection $CommentaireToBug
  * @property Doctrine_Collection $BugToDocument
  * 
- * @method string              getBugUrl()          Returns the current record's "bug_url" value
- * @method string              getBugDescription()  Returns the current record's "bug_description" value
- * @method integer             getBugAuteurId()     Returns the current record's "bug_auteur_id" value
- * @method integer             getBugReferentId()   Returns the current record's "bug_referent_id" value
- * @method integer             getBugStatutId()     Returns the current record's "bug_statut_id" value
- * @method Utilisateur         getUtilisateur()     Returns the current record's "Utilisateur" value
- * @method Statut              getStatut()          Returns the current record's "Statut" value
- * @method Doctrine_Collection getBugToDocument()   Returns the current record's "BugToDocument" collection
- * @method Bug                 setBugUrl()          Sets the current record's "bug_url" value
- * @method Bug                 setBugDescription()  Sets the current record's "bug_description" value
- * @method Bug                 setBugAuteurId()     Sets the current record's "bug_auteur_id" value
- * @method Bug                 setBugReferentId()   Sets the current record's "bug_referent_id" value
- * @method Bug                 setBugStatutId()     Sets the current record's "bug_statut_id" value
- * @method Bug                 setUtilisateur()     Sets the current record's "Utilisateur" value
- * @method Bug                 setStatut()          Sets the current record's "Statut" value
- * @method Bug                 setBugToDocument()   Sets the current record's "BugToDocument" collection
+ * @method string              getBugUrl()           Returns the current record's "bug_url" value
+ * @method string              getBugDescription()   Returns the current record's "bug_description" value
+ * @method integer             getBugAuteurId()      Returns the current record's "bug_auteur_id" value
+ * @method integer             getBugReferentId()    Returns the current record's "bug_referent_id" value
+ * @method integer             getBugStatutId()      Returns the current record's "bug_statut_id" value
+ * @method Utilisateur         getUtilisateur()      Returns the current record's "Utilisateur" value
+ * @method Statut              getStatut()           Returns the current record's "Statut" value
+ * @method Doctrine_Collection getCommentaireToBug() Returns the current record's "CommentaireToBug" collection
+ * @method Doctrine_Collection getBugToDocument()    Returns the current record's "BugToDocument" collection
+ * @method Bug                 setBugUrl()           Sets the current record's "bug_url" value
+ * @method Bug                 setBugDescription()   Sets the current record's "bug_description" value
+ * @method Bug                 setBugAuteurId()      Sets the current record's "bug_auteur_id" value
+ * @method Bug                 setBugReferentId()    Sets the current record's "bug_referent_id" value
+ * @method Bug                 setBugStatutId()      Sets the current record's "bug_statut_id" value
+ * @method Bug                 setUtilisateur()      Sets the current record's "Utilisateur" value
+ * @method Bug                 setStatut()           Sets the current record's "Statut" value
+ * @method Bug                 setCommentaireToBug() Sets the current record's "CommentaireToBug" collection
+ * @method Bug                 setBugToDocument()    Sets the current record's "BugToDocument" collection
  * 
  * @package    adminpicaddy
  * @subpackage model
@@ -77,6 +80,10 @@ abstract class BaseBug extends sfDoctrineRecord
              'local' => 'bug_statut_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
+
+        $this->hasMany('Commentaire as CommentaireToBug', array(
+             'local' => 'id',
+             'foreign' => 'commentaire_bug_id'));
 
         $this->hasMany('Document as BugToDocument', array(
              'local' => 'id',
