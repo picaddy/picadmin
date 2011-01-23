@@ -148,7 +148,7 @@ $(document).pngFix( );
 		<div class="nav">
 		<div class="table">
 		
-		<ul class="select"><li><a href="#nogo"><b>Accueil</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="<?php echo url_for("@main")?>"><b>Accueil</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
 		</div>
@@ -158,7 +158,7 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		                    
-		<ul class="current"><li><a href="#nogo"><b>Projet</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="current"><li><a href="<?php echo url_for("@projets")?>"><b>Projets</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
                 </div>
@@ -168,7 +168,7 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="select"><li><a href="#nogo"><b>Bugs</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="<?php echo url_for("@bugs")?>"><b>Bugs</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
 		</div>
@@ -178,7 +178,7 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="select"><li><a href="#nogo"><b>Idées</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="<?php echo url_for("@idees")?>"><b>Idées</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
 		</div>
@@ -188,7 +188,7 @@ $(document).pngFix( );
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="select"><li><a href="#nogo"><b>Notes</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="<?php echo url_for("@notes")?>"><b>Notes</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
 
@@ -199,7 +199,7 @@ $(document).pngFix( );
 
                 <div class="nav-divider">&nbsp;</div>
 
-		<ul class="select"><li><a href="#nogo"><b>Paramétrage</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<ul class="select"><li><a href="<?php echo url_for("@parametrages")?>"><b>Paramétrages</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
 		<div class="select_sub">
                     <ul class="sub">
@@ -240,11 +240,11 @@ $(document).pngFix( );
 
 	<table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
 	<tr>
-		<th rowspan="3" class="sized"><img src="../images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"></th>
 		<th class="topleft"></th>
 		<td id="tbl-border-top">&nbsp;</td>
 		<th class="topright"></th>
-		<th rowspan="3" class="sized"><img src="../images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
+		<th rowspan="3" class="sized"></th>
 	</tr>
 	<tr>
 		<td id="tbl-border-left"></td>

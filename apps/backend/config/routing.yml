@@ -1,6 +1,41 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+# Main
+main:
+  url:   /
+  param: { module: main, action: index }
+
+# Projets
+projets:
+  url:   /projets/
+  param: { module: projets, action: index }
+
+# Taches
+taches:
+  url:   /taches/
+  param: { module: taches, action: index }
+  
+# Bugs
+bugs:
+  url:  /bugs/
+  param: { module: bugs, action: index }
+
+# Idées
+idees:
+  url:  /idees/
+  param: { module: idees, action: index }
+
+# Notes
+notes:
+  url:  /notes/
+  param: { module: notes, action: index }
+
+# Parametrages
+parametrages:
+  url:  /parametrages/
+  param: { module: parametrages, action: index }
+
 # default rules
 homepage:
   url:   /
