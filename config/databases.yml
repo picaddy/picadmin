@@ -2,6 +2,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:host=localhost;dbname=picadmin'
+      dsn: 'mysql:host=localhost;dbname=adminpicaddy'
       username: root
-      password: MWY762VM
+      password: utopie
