@@ -36,6 +36,16 @@ parametrages:
   url:  /parametrages/
   param: { module: parametrages, action: index }
 
+# Connexion
+connexion:
+  url: /connexion/
+  param: { module: connexion, action: login }
+
+# Deconnexion
+deconnexion:
+  url: /deconnexion/
+  param: { module: connexion, action: logout }
+
 # default rules
 homepage:
   url:   /

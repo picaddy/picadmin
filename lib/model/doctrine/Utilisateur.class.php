@@ -12,4 +12,7 @@
  */
 class Utilisateur extends BaseUtilisateur
 {
+    public function getUserByEmail($email) {
+        return Doctrine_Core::getTable('Utilisateur')->getUserByEmailTable($email);
+    }
 }

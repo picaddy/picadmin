@@ -212,6 +212,19 @@ $(document).pngFix( );
 		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 		</li>
 		</ul>
+
+                <?php if($sf_user->isAuthenticated()): ?>
+                <div class="nav-divider">&nbsp;</div>
+
+		<ul class="select"><li><a href="<?php echo url_for("@deconnexion")?>"><b>Deconnexion</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<div class="select_sub">
+
+                </div>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+		</ul>
+                <?php endif; ?>
 		
 		<div class="clear"></div>
 		</div>
@@ -250,9 +263,35 @@ $(document).pngFix( );
 		<td id="tbl-border-left"></td>
 		<td>
 		<!--  start content-table-inner ...................................................................... START -->
-		<div id="content-table-inner">
-			 <?php echo $sf_content ?>
+                <div id="content-table-inner">
 
+                    <!--  start message-green -->
+               <?php if ($sf_user->hasFlash('notice')): ?>
+                    <div id="message-green">
+			<table border="0" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                            <td class="green-left"><?php echo $sf_user->getFlash('notice') ?></td>
+                            <td class="green-right"><a class="close-green"></a></td>
+                            </tr>
+                        </table>
+                    </div>
+               <?php endif; ?>
+                    <!--  end message-green -->
+
+               <?php if ($sf_user->hasFlash('error')): ?>
+                    <!--  start message-red -->
+                    <div id="message-red">
+                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                            <td class="red-left"><?php echo $sf_user->getFlash('error') ?></td>
+                            <td class="red-right"><a class="close-red"></a></td>
+                            </tr>
+			</table>
+                    </div>
+				<!--  end message-red -->
+               <?php endif; ?>
+
+			 <?php echo $sf_content ?>
 		</div>
 		<!--  end content-table-inner ............................................END  -->
 		</td>

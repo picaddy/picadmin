@@ -16,4 +16,8 @@ class Projet extends BaseProjet
 	return Doctrine_Core::getTable('Projet')->getListeProjet();
     }
 
+    public function getListeProjetByUserAll($idU) {
+	return Doctrine_Core::getTable('Projet')->getListeProjetByUser($idU);
+    }
+
 }
