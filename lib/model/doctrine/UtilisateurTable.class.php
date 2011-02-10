@@ -17,6 +17,17 @@ class UtilisateurTable extends Doctrine_Table
         return Doctrine_Core::getTable('Utilisateur');
     }
 
+    //Récupérer un utilisateur 
+    public static function getUserById($id)
+    {
+        $q = Doctrine_Query::create()
+            ->from('Utilisateur u')
+            ->where('u.id = ?', $id);
+
+        $user = $q->fetchOne();
+
+        return $user;
+    }
     public static function getUserByEmailTable($email) {
         $user = Doctrine::getTable('Utilisateur')
 			->createQuery('u')

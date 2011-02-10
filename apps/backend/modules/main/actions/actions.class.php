@@ -16,15 +16,8 @@ class mainActions extends sfActions
   * @param sfRequest $request A request object
   */
   public function executeIndex(sfWebRequest $request) {
-    $this->objet_projet = new Projet();
-    $this->txt = '';
-    foreach($this->objet_projet->getListeProjetByUserAll($this->getUser()->getAttribute('idUtilisateur')) as $p) {
-        $this->txt .= $p->getProjet()->getProjetNom();
-    }
-
-      /*$listeProjets = Doctrine::getTable('ProjetToUtilisateur')->findByutilisateurId(1);
-      foreach($listeProjets as $p) {
-          $this->txt .= $p->getProjet()->getProjetNom();
-      }*/
+    //On va chercher tous les projets de l'utilisateur connecté
+    $utilisateur = new Utilisateur();
+    $this->utilisateur = $utilisateur->getUserProjects($this->getUser()->getAttribute('idUtilisateur'));
   }
 }

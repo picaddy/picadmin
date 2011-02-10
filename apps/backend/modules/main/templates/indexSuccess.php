@@ -2,6 +2,11 @@
 <div id="table-content">
 
     <!--  start list-table ..................................................................................... -->
-   <?php echo $txt; ?>
+   <?php  foreach($utilisateur as $projet)
+    {
+        echo $projet->getProjet()->getProjet_nom();
+
+    }?>
+
 </div>
 <!--  end content-table  -->
