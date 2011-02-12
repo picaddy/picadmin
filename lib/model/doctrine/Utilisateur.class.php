@@ -26,8 +26,19 @@ class Utilisateur extends BaseUtilisateur
        return Doctrine_Core::getTable('Utilisateur')->getUserById($id)->getProjetToUtilisateur();
     }
 
+    //Retourne un tableau des notes de l'utilisateur
+    public function getUserNotes($id)
+    {
+        return Doctrine_Core::getTable('Utilisateur')->getUserById($id)->getUtilisateurToNote();
+    }
+    
     public function getUserObjectById($id) {
         return Doctrine_Core::getTable('Utilisateur')->getUserById($id);
+    }
+
+    public function getUserAll()
+    {
+        return Doctrine_Core::getTable('Utilisateur')->getUserAll();
     }
     
 }

@@ -12,4 +12,9 @@
  */
 class Groupe extends BaseGroupe
 {
+    public function getGroupeAll()
+    {
+        return Doctrine_Core::getTable('Groupe')->getGroupeAll();
+
+    }
 }

@@ -204,9 +204,9 @@ $(document).pngFix( );
 		<div class="select_sub">
                     <ul class="sub">
 			<li><a href="#nogo">Mon profil</a></li>
-			<li class="sub_show"><a href="#nogo">Statuts</a></li>
-			<li><a href="#nogo">Utilisateurs</a></li>
-                        <li><a href="#nogo">Types de projet</a></li>
+			<li class="sub_show"><a href="<?php echo url_for('@statut')?>">Statuts</a></li>
+			<li><a href="<?php echo url_for('@utilisateur')?>">Utilisateurs</a></li>
+                        <li><a href="<?php echo url_for('@typeprojet')?>">Types de projet</a></li>
                     </ul>
                 </div>
 		<!--[if lte IE 6]></td></tr></table></a><![endif]-->

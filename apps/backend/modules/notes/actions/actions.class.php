@@ -17,6 +17,10 @@ class notesActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-  //  $this->forward('default', 'module');
+        //On va aller chercher toutes les notes de l'utilisateur connecté
+        $utilisateur = new Utilisateur();
+        $this->liste_note = $utilisateur->getUserNotes($this->getUser()->getAttribute('idUtilisateur'));
+
+        
   }
 }

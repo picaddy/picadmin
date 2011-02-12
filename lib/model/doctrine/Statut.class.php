@@ -12,4 +12,8 @@
  */
 class Statut extends BaseStatut
 {
+       public function getStatutAll()
+       {
+           return  Doctrine_Core::getTable('Statut')->getListeStatut();
+       }
 }

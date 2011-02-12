@@ -16,4 +16,12 @@ class StatutTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Statut');
     }
+
+    public static function getListeStatut()
+    {
+        $statut = Doctrine::getTable('Statut')
+			->createQuery('a')
+			->execute();
+	return $statut;
+    }
 }

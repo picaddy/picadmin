@@ -16,4 +16,12 @@ class GroupeTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Groupe');
     }
+     public static function getGroupeAll()
+    {
+        $groupe = Doctrine::getTable('Groupe')
+			->createQuery('a')
+			->execute();
+	return $groupe;
+
+    }
 }

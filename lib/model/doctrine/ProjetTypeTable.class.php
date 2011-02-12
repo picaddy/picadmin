@@ -16,4 +16,12 @@ class ProjetTypeTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('ProjetType');
     }
+
+    public static function getProjetTypeAll()
+    {
+        $projettype = Doctrine::getTable('ProjetType')
+			->createQuery('a')
+			->execute();
+	return $projettype;
+      }
 }

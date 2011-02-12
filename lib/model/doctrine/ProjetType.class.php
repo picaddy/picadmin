@@ -12,4 +12,8 @@
  */
 class ProjetType extends BaseProjetType
 {
+    public function getProjetTypeAll()
+    {
+        return Doctrine_Core::getTable('ProjetType')->getProjetTypeAll();
+    }
 }
