@@ -16,4 +16,11 @@ class IdeeTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Idee');
     }
+
+    public static function getListeIdees() {
+	 $liste_idees = Doctrine::getTable('Idee')
+			->createQuery('a')
+			->execute();
+	return $liste_idees;
+    }
 }

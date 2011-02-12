@@ -3,37 +3,43 @@
 
 # Main
 main:
-  url:   /
+  url: /
   param: { module: main, action: index }
 
 # Projets
 projets:
-  url:   /projets/
+  url: /projets/
   param: { module: projets, action: index }
+
+projetindex:
+  url: /projets/:id
+  param: { module: projets, action: indexProjet }
+  requirements: { id: \d+ }
+
 
 # Taches
 taches:
-  url:   /taches/
+  url: /taches/
   param: { module: taches, action: index }
   
 # Bugs
 bugs:
-  url:  /bugs/
+  url: /bugs/
   param: { module: bugs, action: index }
 
 # Idées
 idees:
-  url:  /idees/
+  url: /idees/
   param: { module: idees, action: index }
 
 # Notes
 notes:
-  url:  /notes/
+  url: /notes/
   param: { module: notes, action: index }
 
 # Parametrages
 parametrages:
-  url:  /parametrages/
+  url: /parametrages/
   param: { module: parametrages, action: index }
 
 # Connexion
@@ -48,14 +54,14 @@ deconnexion:
 
 # default rules
 homepage:
-  url:   /
+  url: /
   param: { module: default, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
-  url:   /:module
+  url: /:module
   param: { action: index }
 
 default:
-  url:   /:module/:action/*
+  url: /:module/:action/*
