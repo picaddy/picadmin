@@ -1,0 +1,20 @@
+## YAML Template.
+Bug:
+  Premier bug:
+   bug_url: http://localhost:8080/backend_dev.php/bugs/
+   bug_description: Aucune liste de bug présente pour le moment
+   bug_projet_id: 1
+   bug_auteur_id: 1
+   bug_referent_id: 2
+   bug_statut_id: 5
+   created_at: '2011-01-20'
+   updated_at: '2011-01-20'
+  Second bug:
+   bug_url: http://localhost:8080/backend_dev.php/projets/
+   bug_description: Aucune liste de projets présente pour le moment
+   bug_projet_id: 1
+   bug_auteur_id: 1
+   bug_referent_id: 2
+   bug_statut_id: 4
+   created_at: '2011-01-20'
+   updated_at: '2011-01-20'

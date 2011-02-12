@@ -1,0 +1,18 @@
+## YAML Template.
+Idee:
+  idee1:
+    idee_nom: Moteur de recherche
+    idee_description: Ajouter un moteur de recherche sur les projets
+    idee_utilisateur_id: 2
+    idee_projet_id: 1
+    idee_statut_id: 9
+    created_at: '2011-01-20'
+    updated_at: '2011-01-20'
+  idee2:
+    idee_nom: Modification css
+    idee_description: Modification css3
+    idee_utilisateur_id: 1
+    idee_projet_id: 1
+    idee_statut_id: 9
+    created_at: '2011-01-20'
+    updated_at: '2011-01-20'
