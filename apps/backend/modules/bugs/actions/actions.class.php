@@ -18,5 +18,7 @@ class bugsActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
     //$this->forward('default', 'module');
+      $this->objet_bugs = new Bug();
+      $this->bugs = $this->objet_bugs->getListeBugAll();
   }
 }

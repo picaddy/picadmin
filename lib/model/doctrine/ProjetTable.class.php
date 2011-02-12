@@ -23,9 +23,4 @@ class ProjetTable extends Doctrine_Table
 			->execute();
 	return $projet;
     }
-
-    public static function getListeProjetByUser($idU, $limit = 5) {
-	$projets = Doctrine::getTable('ProjetToUtilisateur')->findByutilisateurId($idU);
-	return $projets;
-    }
 }

@@ -25,5 +25,9 @@ class Utilisateur extends BaseUtilisateur
     {
        return Doctrine_Core::getTable('Utilisateur')->getUserById($id)->getProjetToUtilisateur();
     }
+
+    public function getUserObjectById($id) {
+        return Doctrine_Core::getTable('Utilisateur')->getUserById($id);
+    }
     
 }

@@ -16,6 +16,7 @@
  * @property Doctrine_Collection $TachesToProjets
  * @property Doctrine_Collection $ProjetToUtilisateur
  * @property Doctrine_Collection $ProjetToIdee
+ * @property Doctrine_Collection $ProjetToBug
  * @property Doctrine_Collection $ProjetToDocument
  * 
  * @method string              getProjetNom()           Returns the current record's "projet_nom" value
@@ -29,6 +30,7 @@
  * @method Doctrine_Collection getTachesToProjets()     Returns the current record's "TachesToProjets" collection
  * @method Doctrine_Collection getProjetToUtilisateur() Returns the current record's "ProjetToUtilisateur" collection
  * @method Doctrine_Collection getProjetToIdee()        Returns the current record's "ProjetToIdee" collection
+ * @method Doctrine_Collection getProjetToBug()         Returns the current record's "ProjetToBug" collection
  * @method Doctrine_Collection getProjetToDocument()    Returns the current record's "ProjetToDocument" collection
  * @method Projet              setProjetNom()           Sets the current record's "projet_nom" value
  * @method Projet              setProjetDescription()   Sets the current record's "projet_description" value
@@ -41,6 +43,7 @@
  * @method Projet              setTachesToProjets()     Sets the current record's "TachesToProjets" collection
  * @method Projet              setProjetToUtilisateur() Sets the current record's "ProjetToUtilisateur" collection
  * @method Projet              setProjetToIdee()        Sets the current record's "ProjetToIdee" collection
+ * @method Projet              setProjetToBug()         Sets the current record's "ProjetToBug" collection
  * @method Projet              setProjetToDocument()    Sets the current record's "ProjetToDocument" collection
  * 
  * @package    adminpicaddy
@@ -106,6 +109,10 @@ abstract class BaseProjet extends sfDoctrineRecord
         $this->hasMany('Idee as ProjetToIdee', array(
              'local' => 'id',
              'foreign' => 'idee_projet_id'));
+
+        $this->hasMany('Bug as ProjetToBug', array(
+             'local' => 'id',
+             'foreign' => 'bug_projet_id'));
 
         $this->hasMany('Document as ProjetToDocument', array(
              'local' => 'id',

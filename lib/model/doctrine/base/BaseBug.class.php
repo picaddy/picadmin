@@ -7,30 +7,36 @@
  * 
  * @property string $bug_url
  * @property string $bug_description
+ * @property integer $bug_projet_id
  * @property integer $bug_auteur_id
  * @property integer $bug_referent_id
  * @property integer $bug_statut_id
  * @property Utilisateur $Utilisateur
  * @property Statut $Statut
+ * @property Projet $Projet
  * @property Doctrine_Collection $CommentaireToBug
  * @property Doctrine_Collection $BugToDocument
  * 
  * @method string              getBugUrl()           Returns the current record's "bug_url" value
  * @method string              getBugDescription()   Returns the current record's "bug_description" value
+ * @method integer             getBugProjetId()      Returns the current record's "bug_projet_id" value
  * @method integer             getBugAuteurId()      Returns the current record's "bug_auteur_id" value
  * @method integer             getBugReferentId()    Returns the current record's "bug_referent_id" value
  * @method integer             getBugStatutId()      Returns the current record's "bug_statut_id" value
  * @method Utilisateur         getUtilisateur()      Returns the current record's "Utilisateur" value
  * @method Statut              getStatut()           Returns the current record's "Statut" value
+ * @method Projet              getProjet()           Returns the current record's "Projet" value
  * @method Doctrine_Collection getCommentaireToBug() Returns the current record's "CommentaireToBug" collection
  * @method Doctrine_Collection getBugToDocument()    Returns the current record's "BugToDocument" collection
  * @method Bug                 setBugUrl()           Sets the current record's "bug_url" value
  * @method Bug                 setBugDescription()   Sets the current record's "bug_description" value
+ * @method Bug                 setBugProjetId()      Sets the current record's "bug_projet_id" value
  * @method Bug                 setBugAuteurId()      Sets the current record's "bug_auteur_id" value
  * @method Bug                 setBugReferentId()    Sets the current record's "bug_referent_id" value
  * @method Bug                 setBugStatutId()      Sets the current record's "bug_statut_id" value
  * @method Bug                 setUtilisateur()      Sets the current record's "Utilisateur" value
  * @method Bug                 setStatut()           Sets the current record's "Statut" value
+ * @method Bug                 setProjet()           Sets the current record's "Projet" value
  * @method Bug                 setCommentaireToBug() Sets the current record's "CommentaireToBug" collection
  * @method Bug                 setBugToDocument()    Sets the current record's "BugToDocument" collection
  * 
@@ -53,6 +59,10 @@ abstract class BaseBug extends sfDoctrineRecord
              'type' => 'string',
              'notnull' => true,
              'length' => 1500,
+             ));
+        $this->hasColumn('bug_projet_id', 'integer', null, array(
+             'type' => 'integer',
+             'notnull' => true,
              ));
         $this->hasColumn('bug_auteur_id', 'integer', null, array(
              'type' => 'integer',
@@ -78,6 +88,11 @@ abstract class BaseBug extends sfDoctrineRecord
 
         $this->hasOne('Statut', array(
              'local' => 'bug_statut_id',
+             'foreign' => 'id',
+             'onDelete' => 'CASCADE'));
+
+        $this->hasOne('Projet', array(
+             'local' => 'bug_projet_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
 

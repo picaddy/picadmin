@@ -1,5 +1,4 @@
 <?php
-
 /**
  * BugTable
  * 
@@ -15,5 +14,12 @@ class BugTable extends Doctrine_Table
     public static function getInstance()
     {
         return Doctrine_Core::getTable('Bug');
+    }
+
+     public static function getListeBug() {
+	 $bug = Doctrine::getTable('Bug')
+			->createQuery('a')
+			->execute();
+	return $bug;
     }
 }

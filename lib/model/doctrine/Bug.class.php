@@ -12,4 +12,7 @@
  */
 class Bug extends BaseBug
 {
+    public function getListeBugAll() {
+	return Doctrine_Core::getTable('Bug')->getListeBug();
+    }
 }

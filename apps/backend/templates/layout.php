@@ -247,7 +247,7 @@ $(document).pngFix( );
 
 	<!--  start page-heading -->
 	<div id="page-heading">
-		<h1>Titre de la page</h1>
+		<h1><?php include_slot('title') ?></h1>
 	</div>
 	<!-- end page-heading -->
 
