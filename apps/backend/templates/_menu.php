@@ -22,9 +22,35 @@
      if($module=="notes") $notesSelected="current";
     else $notesSelected="select";
 
-     if($module=="parametrages") $paramSelected="current";
-    else $paramSelected="select";
+     if($module=="parametrages"){
+        $paramSelected="current";
+        $paramShow = "show";
+     }else
+     {
+        $paramShow = "";
+        $paramSelected="select";
+     }
 
+     if($action == "indexProjetType")
+     {
+         $paramSubType = "class='sub_show'";
+         $paramSubStatut = "";
+         $paramSubUtilisateur = "";
+     }
+
+     if($action == "indexStatut")
+     {
+         $paramSubType = "";
+         $paramSubStatut = "class='sub_show'";
+         $paramSubUtilisateur = "";
+     }
+
+     if($action == "indexUtilisateur")
+     {
+         $paramSubType = "";
+         $paramSubStatut = "";
+         $paramSubUtilisateur = "class='sub_show'";
+     }
 
    
 ?>
@@ -90,12 +116,12 @@
 
 		<ul class="<?php echo $paramSelected?>"><li><a href="<?php echo url_for("@parametrages")?>"><b>Paramétrages</b><!--[if IE 7]><!--></a><!--<![endif]-->
 		<!--[if lte IE 6]><table><tr><td><![endif]-->
-		<div class="select_sub">
+		<div class="select_sub <? echo $paramShow?>">
                     <ul class="sub">
 			<li><a href="#nogo">Mon profil</a></li>
-			<li class="sub_show"><a href="<?php echo url_for('@statut')?>">Statuts</a></li>
-			<li><a href="<?php echo url_for('@utilisateur')?>">Utilisateurs</a></li>
-                        <li><a href="<?php echo url_for('@typeprojet')?>">Types de projet</a></li>
+			<li <?php echo $paramSubStatut?>><a href="<?php echo url_for('@statut')?>">Statuts</a></li>
+			<li <?php echo $paramSubUtilisateur?>><a href="<?php echo url_for('@utilisateur')?>">Utilisateurs</a></li>
+                        <li <?php echo $paramSubType?>><a href="<?php echo url_for('@typeprojet')?>">Types de projet</a></li>
                     </ul>
                 </div>
 		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
