@@ -13,7 +13,7 @@
  * @method Groupe              setGroupeNom()           Sets the current record's "groupe_nom" value
  * @method Groupe              setUtilisateurToGroupe() Sets the current record's "UtilisateurToGroupe" collection
  * 
- * @package    adminpicaddy
+ * @package    picadmin
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

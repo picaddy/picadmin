@@ -12,7 +12,7 @@
  */
 class Idee extends BaseIdee
 {
-    public function getListeIdeeALl()
+    public static function getListeIdeeALl()
     {
         return Doctrine_Core::getTable('Idee')->getListeIdees();
     }

@@ -40,7 +40,7 @@
  * @method Statut              setStatutToIdee()    Sets the current record's "StatutToIdee" collection
  * @method Statut              setStatutToBug()     Sets the current record's "StatutToBug" collection
  * 
- * @package    adminpicaddy
+ * @package    picadmin
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

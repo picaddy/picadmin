@@ -16,4 +16,12 @@ class Statut extends BaseStatut
        {
            return  Doctrine_Core::getTable('Statut')->getListeStatut();
        }
+
+       public function getStatutById($id)
+       {
+           return  Doctrine_Core::getTable('Statut')->getStatutById($id);
+       }
+
+       
+
 }

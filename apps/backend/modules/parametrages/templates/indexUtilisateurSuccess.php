@@ -1,8 +1,26 @@
+<?php use_javascript('utilisateur.js') ?>
+
 <?php echo slot("title","Gestion des Utilisateurs")?>
 <div id="table-content">
   
-    <b>Liste des groupes</b><br><br>
+    <b>Liste des groupes</b><?php echo image_tag('forms/icon_plus.gif',array('width'=>'12px','height'=>'12px','onClick'=>"ajout_groupe_form();")) ?><br><br>
 
+    <div id="groupe_form" style="display:none;">
+        <br>
+
+         <span style="margin-left:10px"><b>Ajout d'un groupe</b></span><br><br>
+        <table style="margin-left:10px" id="id-form">
+        <tr>
+           <td>
+                <b>Libellé :</b><?php echo $groupe_form['groupe_nom']->render(array('class' =>'inp-form')) ?>
+           </td>
+        
+           <td align="left"><input type="submit" value="Ajouter" class="form-submit"/>
+           </td>
+        </tr>
+        </table>
+         <br>
+    </div>
 
     <form id="mainform" action="">
         <table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">

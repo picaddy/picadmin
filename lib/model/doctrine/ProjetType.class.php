@@ -16,4 +16,14 @@ class ProjetType extends BaseProjetType
     {
         return Doctrine_Core::getTable('ProjetType')->getProjetTypeAll();
     }
+
+    public function getProjetTypeById($id)
+    {
+      return Doctrine_Core::getTable('ProjetType')->getProjetType($id);
+    }
+    /*
+    public function ProjetType($libelle,$couleur,$code)
+    {
+        
+    }*/
 }

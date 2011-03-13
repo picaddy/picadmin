@@ -26,6 +26,32 @@ class projetsActions extends sfActions
 */
   public function executeIndexProjet(sfWebRequest $request)
   {
+      $this->projet = Projet::getProjetById($request->getParameter('id'));
+
+      $this->utilisateurs = $this->projet->getProjetToUtilisateur();
+      $this->listeTaches = $this->projet->getTachesToProjets();
+      $this->listeIdees = $this->projet->getProjetToIdee();
+      $this->listeBugs = $this->projet->getProjetToBug();
+      $this->listeDocuments = $this->projet->getProjetToDocument();
+  }
+
+  public function executeIndexTaches(sfWebRequest $request)
+  {
+      $this->projet = Projet::getProjetById($request->getParameter('id'));
       
+  }
+
+  public function executeIndexIdees(sfWebRequest $request)
+  {
+      $this->projet = Projet::getProjetById($request->getParameter('id'));
+      $this->liste_idees = $this->projet->getProjetToIdee();
+
+  }
+
+  public function executeIndexBugs(sfWebRequest $request)
+  {
+      $this->projet = Projet::getProjetById($request->getParameter('id'));
+      $this->bugs = $this->projet->getProjetToBug();
+
   }
 }

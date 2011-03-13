@@ -11,6 +11,21 @@ projets:
   url:   /projets/
   param: { module: projets, action: index }
 
+projetotaches:
+  url:  /projets/:id/taches/
+  param: { module: projets, action: indexTaches }
+  requirements: { id: \d+ }
+
+projetobugs:
+  url:  /projets/:id/bugs/
+  param: { module: projets, action: indexBugs }
+  requirements: { id: \d+ }
+
+projetoidees:
+  url:  /projets/:id/idees/
+  param: { module: projets, action: indexIdees }
+  requirements: { id: \d+ }
+
 projetindex:
   url:   /projets/:id
   param: { module: projets, action: indexProjet }
@@ -42,14 +57,34 @@ parametrages:
   url:  /parametrages/
   param: { module: parametrages, action: index }
 
+profil:
+  url:   /parametrages/profil/
+  param: { module: parametrages, action: profil }
+  
 statut:
   url:  /parametrages/statuts/
   param: { module: parametrages, action: indexStatut }
 
+suppressionstatut:
+  url:  /parametrages/statuts/suppressionstatut
+  param: { module: parametrages, action: suppressionstatut }
+
+editionstatut:
+  url:  /parametrages/statuts/editionstatut
+  param: { module: parametrages, action: editionstatut }
+  
+suppressiontype:
+  url:  /parametrages/typeprojets/suppressiontype
+  param: { module: parametrages, action: suppressiontype }
+
+editiontype:
+  url:  /parametrages/typeprojets/editiontype
+  param: { module: parametrages, action: editiontype }
+
 typeprojet:
   url:  /parametrages/typeprojets/
   param: { module: parametrages, action: indexProjetType }
-
+  
 utilisateur:
   url:  /parametrages/utilisateurs/
   param: { module: parametrages, action: indexUtilisateur }

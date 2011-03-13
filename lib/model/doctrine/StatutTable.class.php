@@ -24,4 +24,15 @@ class StatutTable extends Doctrine_Table
 			->execute();
 	return $statut;
     }
+
+    public static function getStatutById($id)
+    {
+        $statut = Doctrine_Query::create()
+            ->from('Statut s')
+            ->where('s.id = ?', $id);
+
+        $statut = $statut->fetchOne();
+
+        return $statut;
+    }
 }

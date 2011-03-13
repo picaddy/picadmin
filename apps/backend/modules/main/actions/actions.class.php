@@ -16,9 +16,15 @@ class mainActions extends sfActions
   * @param sfRequest $request A request object
   */
   public function executeIndex(sfWebRequest $request) {
-      
     //On va chercher tous les projets de l'utilisateur connecté
     $utilisateur = new Utilisateur();
-    $this->utilisateur = $utilisateur->getUserProjects($this->getUser()->getAttribute('idUtilisateur'));
-  }
+    $this->projetsUtilisateur = $utilisateur->getUserProjects($this->getUser()->getAttribute('idUtilisateur'));
+    
+    $this->utilisateur = $utilisateur->getUserObjectById($this->getUser()->getAttribute('idUtilisateur'));
+
+    $tab_request = $request->getRequestParameters();
+    $this->action = $tab_request['action'];
+    $this->module = $tab_request['module'];
+
+    }
 }

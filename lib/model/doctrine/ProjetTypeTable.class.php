@@ -23,5 +23,18 @@ class ProjetTypeTable extends Doctrine_Table
 			->createQuery('a')
 			->execute();
 	return $projettype;
-      }
+    }
+
+    public static function getProjetType($id)
+    {
+           $q = Doctrine_Query::create()
+            ->from('ProjetType p')
+            ->where('p.id = ?', $id);
+
+        $projetype = $q->fetchOne();
+
+        return $projetype;
+    }
+
+  
 }

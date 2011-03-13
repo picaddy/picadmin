@@ -19,7 +19,7 @@
  * @method TacheToUtilisateur setTache()          Sets the current record's "Tache" value
  * @method TacheToUtilisateur setUtilisateur()    Sets the current record's "Utilisateur" value
  * 
- * @package    adminpicaddy
+ * @package    picadmin
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

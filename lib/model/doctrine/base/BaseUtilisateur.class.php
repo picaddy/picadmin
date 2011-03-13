@@ -49,7 +49,7 @@
  * @method Utilisateur         setUtilisateurToNote()        Sets the current record's "UtilisateurToNote" collection
  * @method Utilisateur         setUtilisateurToDocument()    Sets the current record's "UtilisateurToDocument" collection
  * 
- * @package    adminpicaddy
+ * @package    picadmin
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
